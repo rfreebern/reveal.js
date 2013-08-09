@@ -49,7 +49,8 @@
                 </section>
 
                 <section>
-                    <h1>RFC 1738</h1>
+                    <h1>What is a URL?</h1>
+                    <h2>RFC 1738</h2>
                     <blockquote>
                         <p>“This document describes the syntax and semantics for a compact string representation for a resource available via the Internet. These strings are called ‘Uniform Resource Locators’ (URLs).”—Tim Berners-Lee et al, 1994</p>
                     </blockquote>
@@ -104,14 +105,14 @@
                 </section>
 
                 <section>
+                    <h1>People Care</h1>
+
                     <blockquote>
-                        <p>“Quote from the Microsoft study goes here.”</p>
+                        <p>“[P]eople spent 25% of their time looking at the URL in navigational tasks vs. 22% in informational tasks.”&#x2014;<a href="ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf">Edward Cutrell &amp; Zhiwei Guan, 2007</a></p>
                     </blockquote>
 
                     <aside class="notes">
-                        <p>A Microsoft Research study conducted in 2007 found that when evaluating search engine results, people spent a quarter of their time looking at the URLs. Some people claim URLs don’t matter, that people just search and click on the result that “looks best.” Turns out, judging what “looks best” involves looking at the URL.</p>
-
-                        <p>[An eye-tracking study of information usage in Web search: Variations in target position and contextual snippet length][<a href="ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf">ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf</a>]</p>
+                        <p>A Microsoft Research study conducted in 2007 found that when evaluating search engine results, ion average, people spent 24% of their time looking at the URLs. Some people claim URLs don’t matter, that people just search and click on the result that “looks best.” Turns out, judging what “looks best” involves looking at the URL.</p>
                     </aside>
                 </section>
 
@@ -126,7 +127,7 @@
                 </section>
 
                 <section>
-                    <h1>Yes, We Can</h1>
+                    <h1>Because We Can</h1>
 
                     <p><a href="http://www.flickr.com/photos/india-nepal-iran/215188804"><img src="http://farm1.staticflickr.com/74/215188804_bba6436f38_o.jpg" alt="Climbers at Khumbu Icefall"></a></p>
 
@@ -139,7 +140,7 @@
                     <h1>What Makes a URL?</h1>
 
                     <ul>
-                        <li>http</li>
+                        <li class="fragment">http</li>
                         <li class="fragment">https</li>
                         <li class="fragment">ftp</li>
                         <li class="fragment">data</li>
@@ -160,7 +161,7 @@
 
                     <ul>
                         <li>example.com</li>
-                        <li class="fragment">gTLD: .com, .net, .org, .edu, .aero., .asia, .biz, .cat, .coop, .goc, .info, .int, .jobs, .mil, .mobi, .museum, .name, .post, .pro, .tel, .travel, .xxx</li>
+                        <li class="fragment">gTLD: .com, .net, .org, .edu, .aero., .asia, .biz, .cat, .coop, .gov, .info, .int, .jobs, .mil, .mobi, .museum, .name, .post, .pro, .tel, .travel, .xxx</li>
                         <li class="fragment">ccTLD: .us, .uk, .au, .ca, .mx, .cc, .cx, .ws, .io, .ly, .es, .fr<span class="fragment"> &#x2026;and hundreds more.</span></li>
                         <li class="fragment">Infrastructure TLDs: <span class="fragment">.arpa</span></li>
                         <li class="fragment">http://ws, http://uz</li>
@@ -204,19 +205,19 @@
                 <section>
                     <h1>What Makes a URL?</h1>
 
-                    <p>http://example.com<span class="highlight-red">:80</span>/path/of/any/length/resource?query=data&another=parameter#fragment</p>
+                    <p>http://www.example.com<span class="highlight-red">:80</span>/path/of/any/length/resource?query=data&another=parameter#fragment</p>
                 </section>
 
                 <section>
                     <h1>What Makes a URL?</h1>
 
-                    <p>http://<span class="highlight-red">username:password@</span>example.com:80/path/of/any/length/resource?query=data&another=parameter#fragment</p>
+                    <p>http://<span class="highlight-red">username:password@</span>www.example.com:80/path/of/any/length/resource?query=data&another=parameter#fragment</p>
                 </section>
 
                 <section>
                     <h1>What Makes a URL?</h1>
 
-                    <p>http://username:password@example.com:80/path/of/any/length<span class="highlight-red">;param=123</span>/resource?query=data&another=parameter#fragment</p>
+                    <p>http://username:password@www.example.com:80/path/of/any/length<span class="highlight-red">;param=123</span>/resource?query=data&another=parameter#fragment</p>
 
                     <aside class="notes">
                         <p>URLs can be complicated. There are potentially a lot of moving parts. Luckily, you don’t have to worry about most of them (add a big red X on the slide), since for the most part you’re working within some reasonable, modern constraints and assumptions. Your URLs are likely to have a scheme, domain, path, and query.</p>
@@ -227,7 +228,7 @@
                 <section>
                     <h1>What Makes a URL?</h1>
 
-                    <p><s>http://username:password@example.com:80/path/of/any/length;param=123/resource?query=data&another=parameter#fragment</s></p>
+                    <p><s>http://username:password@www.example.com:80/path/of/any/length;param=123/resource?query=data&another=parameter#fragment</s></p>
 
                     <aside class="notes">
                         <p>Luckily, you don’t have to worry about most of this crap. For the most part we’re all working within some reasonable, modern constraints and assumptions.</p>
@@ -272,8 +273,8 @@
                     <ul>
                         <li>Short</li>
                         <li>Memorable</li>
-                        <li>Readable</li>
                         <li>Speakable</li>
+                        <li>Readable</li>
                     </ul>
 
                     <aside class="notes">
@@ -306,7 +307,7 @@
 
                     <ul>
                         <li style="font-family: Arial Black">IllJIll.com</li>
-                        <li style="letter-spacing: -3px;">lovelymorn.com</li>
+                        <li style="letter-spacing: -5px;">lovelymorn.com</li>
                     </ul>
                     
                     <aside class="notes">
@@ -502,7 +503,7 @@
                     <aside class="notes">
                         <p>If you were looking for information about a newly-developed cryptography procedure, which looks more credible:</p>
                         <p>This is a little less cut-and-dried, because both URLs have something going for them. However, the first has the strength of <em>positive association</em>: Carnegie Mellon University is known for making advances in research, and that URL looks like it points to a CMU professor’s publication. The second, while it’s designed perfectly well, has no such association, which hurts its credibility in comparison.</p>
-                    <p>However, there’s more to assessing credibility than that. There’s a concept in cognitive neuroscience known as “processing fluency.” Processing fluency is the ease with which your brain can parse information.</p>
+                    <p>However, there’s more to assessing credibility than that. There’s a concept in cognitive neuroscience known as “processing fluency.”</p>
                     </aside>
                 </section>
 
@@ -537,13 +538,16 @@
                     <blockquote>
                         <p>“A hackable URL is one that makes sense to a human reader, and where the human reader can guess what to change to get to another page.”—<a href="http://2002-2012.mattwilcox.net/archive/entry/id/990/">Matt Wilcox, 2008</a></p>
                     </blockquote>
+
+                    <aside class="notes">
+                        The word "hack" has negative connotations, but originally it meant "messing around with something to get it to do what you want". Hacking a URL isn't figuring out how to steal the site's password database, it's figuring out how to get from one page to another without clicking through the site's traditional navigation. It's a power-user shortcut.
                 </section>
 
                 <section>
                     <h2>Good URLs are</h2>
                     <h1>Hackable</h1>
 
-                    <p class="fragment">
+                    <p>
                         Not hackable: <a href="http://www.amazon.com/Tovolo-KING-Cube-Trays-Blue/dp/B00395FHRO/ref=sr_1_2">http://www.amazon.com/Tovolo-KING-Cube-Trays-Blue/dp/B00395FHRO/ref=sr_1_2</a>
                     </p>
 
@@ -607,14 +611,15 @@
                     
                     <p>Canonical URL: <a href="http://example.com/documents/12345/title-of-the-document">http://example.com/documents/12345/title-of-the-document</a></p>
 
-                    <p>Requested URL: <a href="http://example.com/documents/12345">http://example.com/documents/12345</a></p>
+                    <p class="fragment">Requested URL: <a href="http://example.com/documents/12345">http://example.com/documents/12345</a></p>
 
-                    <p>Response:</p>
-
-                    <pre><code>
-                        HTTP/1.1 301 Moved Permanently
-                        Location: /documents/12345/title-of-the-document
-                    </code></pre>
+                    <div class="fragment">
+                        Response:
+                        <pre><code>
+                            HTTP/1.1 301 Moved Permanently
+                            Location: /documents/12345/title-of-the-document
+                        </code></pre>
+                    </div>
                 </section>
 
                 <section>
@@ -655,46 +660,43 @@
                 <section>
                     <h1>Robustness</h1>
 
-                    <p>You want your URLs to be robust. Robustness means they’re hard to screw up when shared.</p>
-
                     <ul>
-                    <li><a href="http://example.com/2013/08/1298654-robust-urls-are-best">http://example.com/2013/08/1298654-robust-urls-are-best</a></li>
+                    <li class="fragment"><a href="http://example.com/2013/08/1298654-robust-urls-are-best">http://example.com/2013/08/1298654-robust-urls-are-best</a></li>
+                    <li class="fragment"><a href="http://example.com/2013/08/1298654">http://example.com/2013/08/1298654</a> &#x2192; <code>301 Moved Permanently</code></li>
+                    <li class="fragment"><a href="http://example.com/2013/08/1298654-robust-urls-a">http://example.com/2013/08/1298654-robust-urls-a</a> &#x2192; <code>301 Moved Permanently</code></li>
+                    <li class="fragment"><a href="http://example.com/2013/08/1298654-ha-ha-you-suck">http://example.com/2013/08/1298654-ha-ha-you-suck</a> &#x2192; <code>404 Not Found</code></li>
                     </ul>
 
-                    <p>Like I mentioned before, dropping the slug shouldn’t result in a 404.</p>
-
-                    <ul>
-                    <li><a href="http://example.com/2013/08/1298654">http://example.com/2013/08/1298654</a> &#x2192; <code>301 Moved Permanently</code></li>
-                    </ul>
-
-                    <p>Dropping even a <em>portion</em> of the slug shouldn’t result in a 404, as long as there’s enough there to identify what’s being requested.</p>
-
-                    <ul>
-                    <li><a href="http://example.com/2013/08/1298654-robust-urls-a">http://example.com/2013/08/1298654-robust-urls-a</a> &#x2192; <code>301 Moved Permanently</code></li>
-                    </ul>
-
-                    <p>Why? Copy-and-paste errors that truncate your URL shouldn’t penalize the user. Platforms that erroneously insert linebreaks shouldn’t penalize the user. <em>Changing</em> the slug to something else entirely, however, should.</p>
-
-                    <ul>
-                    <li><a href="http://example.com/2013/08/1298654-ha-ha-you-suck">http://example.com/2013/08/1298654-ha-ha-you-suck</a> &#x2192; <code>404 Not Found</code></li>
-                    </ul>
-
-                    <p>Additionally, avoid generating URLs that contain encoded characters, because the way they’re shared could result in the dreaded %2520, aka double-encoding, or in the other direction, improper decoding.</p>
+                    <aside class="notes">
+                        <p>You want your URLs to be robust. Robustness means they’re hard to screw up when shared.</p>
+                        <p>Like I mentioned before, dropping the slug shouldn’t result in a 404.</p>
+                        <p>Dropping even a <em>portion</em> of the slug shouldn’t result in a 404, as long as there’s enough there to identify what’s being requested.</p>
+                        <p>Why? Copy-and-paste errors that truncate your URL shouldn’t penalize the user. Platforms that erroneously insert linebreaks shouldn’t penalize the user. <em>Changing</em> the slug to something else entirely, however, should.</p>
+                        <p>Additionally, avoid generating URLs that contain encoded characters, because the way they’re shared could result in the dreaded %2520, aka double-encoding, or in the other direction, improper decoding.</p>
+                    </aside>
                 </section>
 
                 <section>
-                    <h1>Old-Fashioned Sharing</h1>
+                    <h1>Old-Fashioned<br/>Sharing</h1>
 
                     <p class="fragment"><img src="http://2.bp.blogspot.com/-_huVcbOYqBk/URn3pHPdrMI/AAAAAAAAFB0/g2gn-25TSa0/s1600/long-url.png" alt="A long URL"></p>
 
                     <aside class="notes">
                         <p>Sharing isn’t only done electronically, though. “Hey, you should check out this page, lemme write it down—”</p>
-                        <p>URLs are shared by hand. They’re shared by speaking. They’re printed in the newspaper and magazines. They show up on receipts and product labels. They’re stitched into clothing tags. How do you make your URLs as shareable as possible even in these diverse media? Make them as short and unambiguous as possible.</p>
+                        <p>URLs are shared by hand. They’re shared by speaking. They’re printed in the newspaper and magazines. They show up on receipts and product labels. They’re stitched into clothing tags.</p>
                     </aside>
                 </section>
 
                 <section>
-                    <h1>Ambiguous Characters</h1>
+                    <p><a href="http://www.flickr.com/photos/minor9th/209503293"><img src="http://farm1.staticflickr.com/60/209503293_981243289c_o.jpg" alt="URL in the sky" style="width: 80%;"></a></p>
+
+                    <aside class="notes">
+                        <p>They're written in the sky. How do you make your URLs as shareable as possible even in these diverse media? Make them as short and unambiguous as possible.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Avoid Ambiguity</h1>
 
                     <ul>
                         <li>O 0</li>
@@ -871,10 +873,13 @@
 
                 <section>
                     <h1>URI Templates</h1>
+                    <h3><a href="http://tools.ietf.org/html/rfc6570">RFC 6570</a></h3>
 
                     <p>http://example.com/dictionary/c/cat</p>
                     <p>http://example.com/dictionary/d/dog</p>
                     <p class="fragment">&#x2192; http://example.com/dictionary/{term:1}/{term}</p>
+                    <br/>
+                    <p class="fragment"><a href="http://pecl.php.net/package/uri_template">uri_template PHP extension</a></p>
 
                     <aside class="notes">
                         <p>If you want to be very formal about your URL design, you could consider writing up some URI Templates. URI Templates are an upcoming IETF specification that provides a standardized way to formally document a URL structure. RFC 6570 is a work in progress, but there are already libraries for various languages (including a PHP extension) to help you work with them.</p>
