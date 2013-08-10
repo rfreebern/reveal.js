@@ -56,9 +56,11 @@
                     </blockquote>
 
                     <aside class="notes">
-                        <p>Before we can talk about what makes a good URL, it’s important to understand what a URL is, and I’m not talking about a dictionary definition.</p>
-
-                        <p>To understand what a URL is, you need to understand what the web really is. I’m not trying to be melodramatic, but: the web is the single biggest collaborative knowledge-sharing effort ever undertaken by the human race. It’s essentially a globe-spanning ad-hoc machine. And like all machines, we need to interact with it to make it useful.</p>
+                        <ul>
+                            <li>The web is the single biggest collaborative knowledge-sharing effort ever undertaken by the human race.</li>
+                            <li>Globe-spanning ad-hoc machine.</li>
+                            <li>We need to interact with it to make it useful.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -70,9 +72,12 @@
                     </blockquote>
 
                     <aside class="notes">
-                        <p>HTTP is the language people use to speak to this machine, and URLs are the nouns in that language. The platonic ideal URL is a short, semantic, well-defined, unchanging string of characters that always and forever refers to a specific piece of information.</p>
-
-                        <p>Egorov’s quote refers to the various programming languages we use to tell individual computers what to do, but the reality is that nearly all of these individual computers eventually talk to each other, and communicate with humans, through HTTP. Without URLs, this communication breaks down.</p>
+                        <ul>
+                            <li>URLs are nouns in HTTP.</li>
+                            <li>Platonic ideal URL: short, semantic, well-defined, unchanging, refers to a specific piece of information.</li>
+                            <li>Programming languages are for physical machines.</li>
+                            <li>Physical machines talk to each other and humans through HTTP.</li>
+                            <li>Without URLs, communication breaks down.</p>
                     </aside>
                 </section>
 
@@ -88,10 +93,6 @@
                             <li class="fragment">Because we can.</li>
                         </ol>
                     </div>
-
-                    <aside class="notes">
-                        <p>Why bother? What’s in it for us? Why not just use whatever defaults our framework of choice provides, or just stick things at whatever URL first comes to mind? Three reasons.</p>
-                    </aside>
                 </section>
 
                 <section>
@@ -100,7 +101,12 @@
                     <p><img src="img/Love-url.jpeg" alt="http://LOVE">
 
                     <aside class="notes">
-                        People care about URLs, both consciously and unconsciously. They care in different ways depending on who they are and how they’re using the URLs. They care about different things depending on their needs. How a developer looks at an API endpoint URL is different from how a college student looks at the URL to a research paper. A marketer putting a URL into an advertisement thinks about it differently than my mom reading that advertisement.</p>
+                        <ul>
+                            <li>Consciously and unconsciously.</li>
+                            <li>Depends on who they are and how they’re using the URLs.</li>
+                            <li>They care about different things depending on their needs.</li>
+                            <li>Developer/API, college student/research paper URL, marketer/advertisement/mom.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -112,7 +118,11 @@
                     </blockquote>
 
                     <aside class="notes">
-                        <p>A Microsoft Research study conducted in 2007 found that when evaluating search engine results, ion average, people spent 24% of their time looking at the URLs. Some people claim URLs don’t matter, that people just search and click on the result that “looks best.” Turns out, judging what “looks best” involves looking at the URL.</p>
+                        <ul>
+                            <li>Microsoft Research, eyetracking study, search engine behavior.</li>
+                            <li>24% of time on average looking at URLs.</li>
+                            <li>"People just search and click on what looks best!"</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -122,7 +132,10 @@
                     <p class="fragment"><a href="http://pixar.com"><img src="img/wall-e-eve-1640.jpg" alt="Pixar’s Wall-E and EVE" title="Pixar&#39;s Wall-E and EVE" style="width: 85%;"></a></p>
 
                     <aside class="notes">
-                        <p>Machines care—well, okay, machines don’t technically <em>care</em>… yet, but they have specific needs and expectations, and certain machines, like the ones run by Google, can seriously affect your personal and business goals if you don’t take them into consideration when creating URLs.</p>
+                        <ul>
+                            <li>Machines have needs and expectations about URLs.</li>
+                            <li>Google's machines can affect your personal and business goals.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -132,7 +145,11 @@
                     <p><a href="http://www.flickr.com/photos/india-nepal-iran/215188804"><img src="img/215188804_bba6436f38_o.jpg" alt="Climbers at Khumbu Icefall"></a></p>
 
                     <aside class="notes">
-                        <p>And finally, because we can. No matter what part we play in the creation of something on the web, we care about our work, and we want every part to be thoughtfully, respectfully crafted. We don’t spend weeks painstakingly ironing out every usability wrinkle and functionality bug just to toss the site up at any old URL. We take pride in our work.</p>
+                        <ul>
+                            <li>No matter what part we play, we care.</li>
+                            <li>We want every part to be thoughtfully, respectfully crafted.</li>
+                            <li>Don't just use any old URL.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -152,7 +169,10 @@
                     </ul>
 
                     <aside class="notes">
-                        URLs begin with a scheme, or protocol. HTTP and HTTPS are the most common on the web, but you'll also regularly run into FTP, data, file, mailto, tel (for telephone numbers), ws and wss (for websockets), and about. In addition to these, the IANA officially recognizes over 150 other URL schemes with either provisional or permanent status. For the sake of simplicity, let's stick to HTTP for now.
+                        <ul>
+                            <li>Scheme or protocol</li>
+                            <li>IANA (Internet Assigned Numbers Authority) recognizes over 150 others</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -164,13 +184,21 @@
                         <li class="fragment">gTLD: .com, .net, .org, .edu, .aero., .asia, .biz, .cat, .coop, .gov, .info, .int, .jobs, .mil, .mobi, .museum, .name, .post, .pro, .tel, .travel, .xxx</li>
                         <li class="fragment">ccTLD: .us, .uk, .au, .ca, .mx, .cc, .cx, .ws, .io, .ly, .es, .fr<span class="fragment"> &#x2026;and hundreds more.</span></li>
                         <li class="fragment">Infrastructure TLDs: <span class="fragment">.arpa</span></li>
-                        <li class="fragment">http://ws, http://uz</li>
                         <li class="fragment">Reserved TLDs: .test, .example, .invalid, .localhost, and .local</li>
+                        <li class="fragment">http://ws, http://uz</li>
                         <li class="fragment">Internationalized domain names: http://xn--zkc6cc5bi7f6e.xn--hlcj6aya9esc7a (http://உதாரணம்.பரிட்சை) </li>
                     </ul>
 
                     <aside class="notes">
-                        The domain consists of a domain name followed by a top-level domain, usually. Top-level domains are divded into generic TLDs, country code TLDs, and infrastructure TLDs. Every URL has a domain name including a top-level domain... except a few. Technically, the TLD itself can resolve, but that's a pretty unusual case. There are also some reserved top-level domains, like .example, for use in testing scenarios, and there are internationalized domains and top-level domains. This is "example.test" written in Tamil and encoded using IDN encoding.
+                        <ul>
+                            <li>Name and top-level domain</li>
+                            <li>Generic TLDs, country-code TLDs, infrastructure TLDs, reserved TLDs</li>
+                            <li>ARPA was the Advanced Research Projects Agency, now DARPA, now Address Routing Protocol Area.</li>
+                            <li>If you own and operate a TLD, name isn't required.</li>
+                            <li>IDNs: This is Tamil for "example.test"</li>
+                            <li>IDNs: domains were English-centric, only used low ASCII.</li>
+                            <li>IDNs are kind of a mess when it comes to implementation and support. Ask me about that later.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -178,10 +206,6 @@
                     <h1>What Makes a URL?</h1>
 
                     <p><span class="fragment">http://</span><span class="fragment">example.com</span><span class="fragment">/path</span><span class="fragment">/of</span><span class="fragment">/any</span><span class="fragment">/length</span><span class="fragment">/resource</span><span class="fragment">?query=data</span><span class="fragment">&another=parameter</span><span class="fragment">#fragment</span></p>
-
-                    <aside class="notes">
-                        So: scheme, domain, path with any number of segments, a resource name (which is really just part of the path), then a query with any number of parameters, and a fragment.
-                    </aside>
                 </section>
 
                 <section>
@@ -220,8 +244,9 @@
                     <p>http://username:password@www.example.com:80/path/of/any/length<span class="highlight-red">;param=123</span>/resource?query=data&another=parameter#fragment</p>
 
                     <aside class="notes">
-                        <p>URLs can be complicated. There are potentially a lot of moving parts. Luckily, you don’t have to worry about most of them (add a big red X on the slide), since for the most part you’re working within some reasonable, modern constraints and assumptions. Your URLs are likely to have a scheme, domain, path, and query.</p>
-                        <p>And maybe a fragment.</p>
+                        <ul>
+                            <li>URLs can be complicated. Lots of moving parts.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -231,8 +256,9 @@
                     <p><s>http://username:password@www.example.com:80/path/of/any/length;param=123/resource?query=data&another=parameter#fragment</s></p>
 
                     <aside class="notes">
-                        <p>Luckily, you don’t have to worry about most of this crap. For the most part we’re all working within some reasonable, modern constraints and assumptions.</p>
-                        <p>And maybe a fragment.</p>
+                        <ul>
+                            <li>You don't have to worry about most of that crap.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -242,7 +268,11 @@
                     <p>http://example.com/path/resource?query=data<span class="fragment">#fragment</span></p>
 
                     <aside class="notes">
-                        <p>Your URLs are likely to have a scheme, domain, path, and query. And maybe a fragment.</p>
+                        <ul>
+                            <li>You’re working within some reasonable, modern constraints and assumptions.</li>
+                            <li>Your URLs are likely to have a scheme, domain, path, and query.</li>
+                            <li>And maybe a fragment.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -259,11 +289,15 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>A good URL is the sum of good parts. You need to think about every piece of the puzzle if you want to make sure your URLs are good. And you can’t just come up with a general plan and expect it to cover all the cases. Nearly every website project includes three types of URLs:</p>
-                        <p>URLs you plan for initially, things like the about page, the contact page, your major sections and subsections, your user profiles, etc.</p>
-                        <p>Auto-generated URLs, the ones that come out of user interaction. You know they’ll be there, but you don’t know what they’ll contain. Someone added a blog post? We just imported 300 new products? A new home just went on the market? What are their URLs?</p>
-                        <p>URLs added by other developers after you’re gone. You’re not going to be in charge of this project forever, and you need to plan ahead and make sure that the next person who joins the team knows the plan for adding new URLs.</p>
-                        <p>We’ll get back to the specifics of putting together a plan. First, we need to understand what makes each part of the URL good.</p>
+                        <ul>
+                            <li>Good URL = sum of good parts. Every piece of the puzzle.</li>
+                            <li>General plan won't cut it. Cover all the bases.</li>
+                            <li>Known knowns: plan for initially. About contact page, major sections and subsections, user profiles, etc.</li>
+                            <li>Known unknowns: from user interaction. Know they'll be there, don't know what they'll contain.</li>
+                            <li>Blog post? 300 new products? New home on the market?</li>
+                            <li>Unknown unknowns: Added by other developers after you're gone. We all get hit by a truck. Plan ahead.</li>
+                            <li>We'll get to plan later. First, what makes the parts good?</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -278,7 +312,10 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>A good domain strikes the right balance between being short, memorable, readable, and speakable. While we’d all love to have our site at something like “ibm.com”, these days we’re forced to get creative.</p>
+                        <ul>
+                            <li>Good domain strikes a balance.</li>
+                            <li>ibm.com</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -293,9 +330,12 @@
                     <p class="fragment">“Real estate online dot com”</p>
 
                     <aside class="notes">
-                        <p>Anders Ramsay, a UX designer in Brooklyn, points out that while real-estate.com looks like a coveted keyword-rich domain name, speaking it requires you to say “real hyphen estate dot com”, which doesn’t exactly roll off the tongue. Despite it being longer, he suggests that a domain such as “realestateonline.com” is easier to say and harder for recipients to misunderstand, while still maintaining the keywords and branding of the original.</p>
-
-                        <p>The litmus test for a logo design is sending it via fax. If it’s still identifiable after being printed in black and white by a crappy dot-matrix, it’s probably a decent logo. One test of a domain name is similar: call someone (ideally someone with a poor connection), tell them your domain, and if they get your site first try, it’s probably a decent domain.</p>
+                        <ul>
+                            <li>Anders Ramsay, UX designer in Brooklyn.</li>
+                            <li>Litmus test for logo design: faxing it.</li>
+                            <li>Litmus test for domain? Tell someone over the phone.</li>
+                            <li>Maybe with marbles in your cheeks.</li>
+                        </ul>
 
                         <p><a href="http://www.andersramsay.com/2005/07/30/selecting-user-friendly-domain-names/">“Selecting user-friendly domain names”, Anders Ramsay, 2005</a></p>
                     </aside>
@@ -311,9 +351,10 @@
                     </ul>
                     
                     <aside class="notes">
-                        <p>Speech is only part of the equation: a good domain must be easy to read as well. Depending on the font, DJ Ill Jill's domain might get mistaken for hip design agency 3J3. Depending on kerning, “lovelymorn.com” might help you greet the day, or it might remind you that your mother is a pretty nice lady.</p>
-
-                        <p>Try to choose a domain that remains readable even in a poorly-chosen font or scribbled handwriting.</p>
+                        <ul>
+                            <li>Poor font choice makes DJ Ill Jill's domain impossible to decipher.</li>
+                            <li>Poor kerning makes lovelymorn.com look like it's about complimenting your mom.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -322,16 +363,9 @@
 
                     <h3 class="fragment">http://rim.jobs</h3>
                     <h3 class="fragment">http://oddsextractor.com</h3>
-
-                    <aside class="notes">
-                        <p>Bad domains can be accidental. Consider Research in Motion, makers of Blackberry devices, who set up a site to post open positions within the company, located at <a href="http://rim.jobs">http://rim.jobs</a>. (It has since been moved.)</p>
-
-                        <p>Consider the company that set up a site that fetches your chances of winning from various online gambling systems, at <a href="http://oddsextractor.com">http://oddsextractor.com</a>.</p>
-                    </aside>
                 </section>
 
                 <section>
-
                     <h3>http://oddsextractor.com</h3>
 
                     <p><a href="http://voncrunchdesign.wordpress.com/2011/11/05/freud-driving-a-tractor/"><img src="img/freud_driving_a_tractor_by_voncrunch-d4f156c.jpg" style="width: 50%;" alt="An odd sex tractor"></a></p>
