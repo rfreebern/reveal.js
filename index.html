@@ -34,6 +34,11 @@
             .right { float: right; }
             .highlight-red { color: red; }
             .highlight-green { color: green; }
+            .reveal blockquote { width: 80%; }
+            blockquote footer { display: block; text-align: right; }
+            blockquote footer:before { content: "—"; }
+            .reveal p { text-align: left; }
+            .reveal p.img { text-align: center; }
         </style>
     </head>
 
@@ -43,16 +48,21 @@
 
                 <section>
                     <h1>The UX of URLs</h1>
-                    <p>
-                        <small><a href="http://rnf.me">Ryan Freebern</a> / <a href="http://twitter.com/rfreebern">@rfreebern</a></small>
-                    </p>
+                    <div><a href="http://rnf.me">Ryan Freebern</a> / <a href="http://twitter.com/rfreebern">@rfreebern</a></div>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>UX begins before user has reached your site.</li>
+                            <li>Explain how we know this, what it means, what makes up a URL, what makes a URL good, and why it matters.</li>
+                        </ul>
                 </section>
 
                 <section>
                     <h1>What is a URL?</h1>
                     <h2>RFC 1738</h2>
                     <blockquote>
-                        <p>“This document describes the syntax and semantics for a compact string representation for a resource available via the Internet. These strings are called ‘Uniform Resource Locators’ (URLs).”—Tim Berners-Lee et al, 1994</p>
+                        <p>“This document describes the syntax and semantics for a compact string representation for a resource available via the Internet. These strings are called ‘Uniform Resource Locators’ (URLs).”</p>
+                        <footer>Tim Berners-Lee et al, 1994</footer>
                     </blockquote>
 
                     <aside class="notes">
@@ -68,7 +78,8 @@
                     <h1>HTTP Spoken Here</h1>
 
                     <blockquote>
-                    <p>“We are building clans around languages we speak to the Machine.” —<a href="https://twitter.com/mraleph/status/225587192427327488">Vyacheslav Egorov, 2013</a></p>
+                    <p>“We are building clans around languages we speak to the Machine.”</p>
+                    <footer><a href="https://twitter.com/mraleph/status/225587192427327488">Vyacheslav Egorov, 2013</a></footer>
                     </blockquote>
 
                     <aside class="notes">
@@ -98,7 +109,7 @@
                 <section>
                     <h1>People Care</h1>
 
-                    <p><img src="img/Love-url.jpeg" alt="http://LOVE">
+                    <p class="img"><img src="img/Love-url.jpeg" alt="http://LOVE"></p>
 
                     <aside class="notes">
                         <ul>
@@ -114,8 +125,11 @@
                     <h1>People Care</h1>
 
                     <blockquote>
-                        <p>“[P]eople spent 25% of their time looking at the URL in navigational tasks vs. 22% in informational tasks.”&#x2014;<a href="ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf">Edward Cutrell &amp; Zhiwei Guan, 2007</a></p>
+                        <p>“[P]eople spent 25% of their time looking at the URL in navigational tasks vs. 22% in informational tasks.”</p>
+                        <footer><a href="ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf">Edward Cutrell &amp; Zhiwei Guan, 2007</a></footer>
                     </blockquote>
+
+                    <p class="fragment img"><img src="img/boromir.jpg" alt="One does not simply click on mordor.com"></p>
 
                     <aside class="notes">
                         <ul>
@@ -129,7 +143,7 @@
                 <section>
                     <h1>Machines Care</h1>
 
-                    <p class="fragment"><a href="http://pixar.com"><img src="img/wall-e-eve-1640.jpg" alt="Pixar’s Wall-E and EVE" title="Pixar&#39;s Wall-E and EVE" style="width: 85%;"></a></p>
+                    <p class="fragment img"><a href="http://pixar.com"><img src="img/wall-e-eve-1640.jpg" alt="Pixar’s Wall-E and EVE" title="Pixar&#39;s Wall-E and EVE" style="width: 85%;"></a></p>
 
                     <aside class="notes">
                         <ul>
@@ -142,7 +156,7 @@
                 <section>
                     <h1>Because We Can</h1>
 
-                    <p><a href="http://www.flickr.com/photos/india-nepal-iran/215188804"><img src="img/215188804_bba6436f38_o.jpg" alt="Climbers at Khumbu Icefall"></a></p>
+                    <p class="img"><a href="http://www.flickr.com/photos/india-nepal-iran/215188804"><img src="img/215188804_bba6436f38_o.jpg" alt="Climbers at Khumbu Icefall"></a></p>
 
                     <aside class="notes">
                         <ul>
@@ -323,11 +337,10 @@
                     <h2>Good Domains are</h2>
                     <h1>Speakable</h1>
 
-                    <h3>real-estate.com</h3>
-                    <p class="fragment">“Real hyphen estate dot com”</p>
-
-                    <h3 class="fragment">realestateonline.com</h3>
-                    <p class="fragment">“Real estate online dot com”</p>
+                    <ul>
+                        <li>real-estate.com<span class="fragment"> “Real hyphen estate dot com”</span></li>
+                        <li class="fragment">realestateonline.com<span class="fragment"> “Real estate online dot com”</span></li>
+                    </ul>
 
                     <aside class="notes">
                         <ul>
@@ -368,7 +381,7 @@
                 <section>
                     <h3>http://oddsextractor.com</h3>
 
-                    <p><a href="http://voncrunchdesign.wordpress.com/2011/11/05/freud-driving-a-tractor/"><img src="img/freud_driving_a_tractor_by_voncrunch-d4f156c.jpg" style="width: 50%;" alt="An odd sex tractor"></a></p>
+                    <p class="img"><a href="http://voncrunchdesign.wordpress.com/2011/11/05/freud-driving-a-tractor/"><img src="img/freud_driving_a_tractor_by_voncrunch-d4f156c.jpg" style="width: 50%;" alt="An odd sex tractor"></a></p>
 
                     <h3 style="position: absolute; top: 250px; right: 0px;" class="fragment">&#x2190; Freud</h3>
 
@@ -382,10 +395,6 @@
 
                     <h3 class="fragment">http://rrrrthats5rs.com</h3>
                     <h3 class="fragment">http://www.llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk</h3>
-
-                    <aside class="notes">
-                        <p>Bad domains can also be intentional, for humor or commentary purposes. Consider the satirical game designers with the URL <a href="http://rrrrthats5rs.com">http://rrrrthats5rs.com</a> (hint: that’s not five r’s). Or the Welsh village with the infamously long name who proudly hosts their site at a domain hardly anyone can type.</p>
-                    </aside>
                 </section>
 
                 <section>
@@ -397,25 +406,29 @@
                         <li>Predictable</li>
                         <li>Most general &#x2192; most specific</li>
                     </ul>
-
+                    
                     <aside class="notes">
-                        <p>Good URL design reflects the structure of the underlying information. Whether you’re building a brochure website for a brick-and-mortar business or a modern web app, your URLs should be consistent and predictable. The path should make sense, showing the information’s categorization from most general to most specific, and function as a sort of secondary navigational aid.</p>
+                        <ul>
+                            <li><em>The Visual Display of Quantitative Information</em>, Edward Tufte</li>
+                            <li>“chartjunk”: needless visual flourishes.</li>
+                            <li>Jesse James Garrett at AdaptivePath: “CMSjunk”</li>
+                        </ul>
                     </aside>
                 </section>
                 
                 <section>
                     <h1>CMSjunk</h1>
 
-                    <blockquote class="fragment">
-                        <p>“[L]ong strings of characters that exist only to satisfy some technical constraint, detracting from the effectiveness of our URLs as communication tools.”—<a href="http://www.adaptivepath.com/ideas/e000058">Jesse James Garrett, 2002</a></p>
+                    <blockquote>
+                        <p>“[L]ong strings of characters that exist only to satisfy some technical constraint, detracting from the effectiveness of our URLs as communication tools.”</p>
+                        <footer><a href="http://www.adaptivepath.com/ideas/e000058">Jesse James Garrett, 2002</a></footer>
                     </blockquote>
 
                     <aside class="notes">
-                        <p>In his book <em>The Visual Display of Quantitative Information</em>, Edward Tufte coined the term “chartjunk” to refer to needless visual flourishes that clutter up informational graphics without improving their effectiveness. Based on this, Jesse James Garrett at AdaptivePath coined the term “CMSjunk”.</p>
-
-                        <p>Good URL paths (and queries too) avoid CMSjunk as much as possible. While we all know that there are technical constraints that sometimes require having an ID number or other identifier in a URL, we try to minimize that. As much as possible, the URL should be <em>usable</em> to a machine, but actively <em>friendly</em> to humans.</p>
-                    
-                        <p>Additionally a well-designed URL path contributes to a URL’s hackability, which is something—a good thing—that we’ll touch on a bit later.</p>
+                        <ul>
+                            <li>URL should be <em>usable</em> to a machine, <em>friendly</em> to humans.</li>
+                            <li>Well-designed URL path contributes to hackability. (Later).</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -427,14 +440,16 @@
                         <li>Keep 'em simple</li>
                     </ul>
                     
-                    <p class="fragment"><a href="http://www.google.com/#gs_rn=21&amp;gs_ri=psy-ab&amp;cp=10&amp;gs_id=29&amp;xhr=t&amp;q=search+term&amp;es_nrs=true&amp;pf=p&amp;output=search&amp;sclient=psy-ab&amp;oq=search+ter&amp;gs_l=&amp;pbx=1&amp;bav=on.2,or.r_qf.&amp;bvm=bv.49478099,d.dmg&amp;fp=f0de797458b9bb2a&amp;biw=1149&amp;bih=660">http://www.google.com/#gs_rn=21&amp;gs_ri=psy-ab&amp;cp=10&amp;gs_id=29&amp;xhr=t&amp;q=search+term&amp;es_nrs=true&amp;pf=p&amp;output=search&amp;sclient=psy-ab&amp;oq=search+ter&amp;gs_l=&amp;pbx=1&amp;bav=on.2,or.r_qf.&amp;bvm=bv.49478099,d.dmg&amp;fp=f0de797458b9bb2a&amp;biw=1149&amp;bih=660</a></p>
+                    <p class="fragment"><a class="fragment fade-out" href="http://www.google.com/#gs_rn=21&amp;gs_ri=psy-ab&amp;cp=10&amp;gs_id=29&amp;xhr=t&amp;q=search+term&amp;es_nrs=true&amp;pf=p&amp;output=search&amp;sclient=psy-ab&amp;oq=search+ter&amp;gs_l=&amp;pbx=1&amp;bav=on.2,or.r_qf.&amp;bvm=bv.49478099,d.dmg&amp;fp=f0de797458b9bb2a&amp;biw=1149&amp;bih=660">http://www.google.com/#gs_rn=21&amp;gs_ri=psy-ab&amp;cp=10&amp;gs_id=29&amp;xhr=t&amp;q=search+term&amp;es_nrs=true&amp;pf=p&amp;output=search&amp;sclient=psy-ab&amp;oq=search+ter&amp;gs_l=&amp;pbx=1&amp;bav=on.2,or.r_qf.&amp;bvm=bv.49478099,d.dmg&amp;fp=f0de797458b9bb2a&amp;biw=1149&amp;bih=660</a></p>
 
-                    <p class="fragment"><a href="http://www.google.com/search?q=search+term">http://www.google.com/search?q=search+term</a></p>
+                    <p class="fragment" data-fragment-index="1"><a href="http://www.google.com/search?q=search+term">http://www.google.com/search?q=search+term</a></p>
 
                     <aside class="notes">
-                        <p>Good queries are brief. If your application can make do with just “?q=search+term”, don’t add extra parameters. Query strings already look kind of messy and intimidating to casual users with all their question marks and ampersands and equals signs, so having unnecessary information in there is just bad form.</p>
-
-                        <p>Google, I’m looking at you. A search for “search term” lands me here... when this gives me the same results.</p>
+                        <ul>
+                            <li>Good queries are brief.</li>
+                            <li>Make do with as few parameters as possible.</li>
+                            <li>Google, I'm looking at you.</li>
+                        </ul>
 
                         <p>Who here knows what character encoding browsers use to parse URLs?</p>
                     </aside>
@@ -445,25 +460,39 @@
                     <h2>A Brief Tangent</h2>
 
                     <p style="font-family: monospace;">http://example.com/path/resource?query=data#fragment</p>
-                    <p style="font-family: monospace;" class="fragment">----------- UTF-8 -------------- -------- ??? ------</p>
+                    <p style="font-family: monospace;"><span class="fragment">------------ UTF-8 ------------- <span class="fragment">------- ??? -------</span></p>
 
                     <p class="fragment">http://example.com/?emotion=(╯°□°)╯︵ ┻━┻</p>
                     <p class="fragment">http://example.com/?emotion=%28%E2%95%AF%C2%B0%E2%96%A1%C2%B0%29%E2%95%AF%EF%B8%B5%20%E2%94%BB%E2%94%81%E2%94%BB</p>
 
                     <aside class="notes">
-                        <p>Everything up to the question mark is parsed using UTF-8, the query string itself is parsed using the document’s encoding. Except if the document’s encoding is UTF-16, UTF-8 is used instead. The moral is: stick to UTF-8 and you’ll most likely be fine.</p>
-
-                        <p>But what about special characters? I want a URL with a tableflip emoji in it. How does that get handled? That’s where percent-encoding comes in. Anything outside of the normal set of ASCII alphanumeric characters and simple punctuation gets converted into a percent sign. However! The reserved characters for path segments and the query string are different.</p>
+                        <ul>
+                            <li>Up to question mark: UTF-8. After: document's encoding.</li>
+                            <li>Except if document is UTF-16; then UTF-8.</li>
+                            <li>Recently saw a quote: "When in doubt, use UTF-8. When not in doubt, you're probably wrong and should still use UTF-8."</li>
+                            <li>Special characters? Percent-encoding, but the special characters for the path are different from the query.</li>
                     </aside>
                 </section>
 
                 <section>
                     <h1>“%2B or not %2B?”</h1>
+
+                    <ul class="fragment">
+                        <li>Allowed unescaped in path segment: <strong>:@-._~!$&'()*+,;=</strong></li>
+                        <li>Allowed unescaped in query parameter: <strong>/?:@-._~!$'()* ,;</strong></li>
+                        <li>Allowed unescaped in query value: <strong>/?:@-._~!$'()* ,;=</strong></li>
+                        <li>Allowed unescaped in fragment: <strong>/?:@-._~!$&'()*+,;=</strong></li>
+                        <li class="fragment">Valid URL: <a href="http://example.com/:@-._~!$&'()*+,=?/?:@-._~!$'()*+,;=/?:@-._~!$'()*+,;==#/?:@-._~!$&'()*+,;=">http://example.com/:@-._~!$&'()*+,=?/?:@-._~!$'()*+,;=/?:@-._~!$'()*+,;==#/?:@-._~!$&'()*+,;=</a></li>
+                        <li class="fragment">URL spec: <a href="http://url.spec.whatwg.org">http://url.spec.whatwg.org</a></li>
+                    </ul>
                     
                     <aside class="notes">
-                        <p>That is the question. In the path segments of a URL, plus signs are fine as-is, but spaces must be encoded to %20. In the query string, plus signs have to be encoded as %2B, but spaces can be represented as either “+” or “%20”.</p>
-
-                        <p>The good news is that there’s work actively being done to improve this. Anne van Kesteren, a Dutch Mozilla employee, is writing a URL spec for the WHATWG that aims to standardize how browsers handle URLs, as well as expose a more consistent and more powerful JavaScript API for working with URLs. </p>
+                        <ul>
+                            <li>In path, plus is fine unescaped, spaces become %20.</li>
+                            <li>In query, plus is %2B, spaces can be %20 or literal +.</li>
+                            <li>It's essentially impossible to remember what characters are allowed where.</li>
+                            <li>Anne van Kesteren is working on URL spec to improve this.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -475,12 +504,6 @@
                         <li>That is all</li>
                         <li>Use <code>history.pushState()</code></li>
                     </ul>
-
-                    <aside class="notes">
-                        <p>Fragments refer to locations within a document. They should be short and clear. Please, please, please don’t use them for anything but that.</p>
-
-                        <p>Remember the infamous hashbang URLs, and how they almost broke the web? With the <code>history.pushState()</code> API supported in all modern browsers, there’s very little need to use fragments to manipulate session history. Add a fallback for old versions of IE if you must.</p>
-                    </aside>
                 </section>
 
                 <section>
@@ -496,7 +519,7 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>We’ve covered the scheme, the domain, the path, the query, and the fragment. What’s left? Everything. As it turns out, there’s more factors to consider that apply to every one of those parts, and the URL as a whole.</p>
+                        <p>More factors to consider that apply to every one of those parts, and the URL as a whole.</p>
                     </aside>
                 </section>
 
@@ -504,8 +527,14 @@
                     <h2>A Good URL is</h2>
                     <h1>Credible</h1>
 
+                    <p class="img"><a href="http://www.flickr.com/photos/7342411@N02/4865201576"><img src="img/4865201576_59e21c9715_b.jpg" alt="Skeptical chihuahua" style="width: 50%;"></a></p>
+
                     <aside class="notes">
-                        <p>When looking for information, whether for a research paper or to find a company to do business with, we need some way to evaluate credibility. The Microsoft Research study I mentioned before says that users spend a quarter of their time looking at URLs. What they’re looking for is credibility.</p>
+                        <ul>
+                            <li>Looking for information requires assessing credibility of sources.</li>
+                            <li>The internet is full of crap. We have to be skeptical, like the chihuahua.</li>
+                            <li>Microsoft study: what users are looking for is credibility.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -519,9 +548,10 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>When you’re judging a URL for credibility, you’re looking for reasons to believe the information provided at that URL is trustworthy and accurate. The <em>reputation</em> your site has built up makes a huge difference. If you want information on chinchillas, which one of these pages looks more credible:</p>
-
-                        <p>Of course you find the wikipedia page more trustworthy, because wikipedia has a reputation for containing well-researched information with references to the sources for that information, whereas everyone knows Joe Banana is a total fraud.</p>
+                        <ul>
+                            <li>Reputation is based on trustworthiness, expertise, accuracy.</li>
+                            <li>Wikipedia has a reputation for some level of these. Joe Banana is a fraud.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -530,14 +560,15 @@
                     <h1>Association</h1>
 
                     <ul class="fragment">
-                        <li><a href="http://www.cmu.edu/staff/daviska/publications/2013/alg349a.pdf">http://www.cmu.edu/staff/daviska/publications/2013/alg349a.pdf</a></li>
+                        <li><a href="http://www.cmu.edu/staff/daviska/papers/2013/alg349a.pdf">http://www.cmu.edu/staff/daviska/papers/2013/alg349a.pdf</a></li>
                         <li><a href="http://www.securisite.com/articles/2013/08/new-algorithm">http://www.securisite.com/articles/2013/08/new-algorithm</a></li>
                     </ul>
 
                     <aside class="notes">
-                        <p>If you were looking for information about a newly-developed cryptography procedure, which looks more credible:</p>
-                        <p>This is a little less cut-and-dried, because both URLs have something going for them. However, the first has the strength of <em>positive association</em>: Carnegie Mellon University is known for making advances in research, and that URL looks like it points to a CMU professor’s publication. The second, while it’s designed perfectly well, has no such association, which hurts its credibility in comparison.</p>
-                    <p>However, there’s more to assessing credibility than that. There’s a concept in cognitive neuroscience known as “processing fluency.”</p>
+                        <ul>
+                            <li>You can also gain credibility by being associated with something credible.</li>
+                            <li>While both URLs look good, CMU has credibility, so the first looks more authoritative.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -546,23 +577,21 @@
                     <p>The ease with which your brain can parse information.</p>
 
                     <aside class="notes">
-                        <p>Studies—and yes, I have citations for this—have shown that statements that are easier to process are regarded as true more often than statements that are difficult to process, regardless of their actual truth. Even apparently simple changes that don’t affect the meaning of the statement, like adding alliteration, rhyme, or repetition can lead to people treating it as more credible. Stocks  perform better in the weeks following their IPO if the company’s name is easier to pronounce.</p>
-
-                        <p>This concept applies to URLs as well. When designing your URLs, strive for simple, memorable, and clear. Choose pleasing, semantically clear words for your path segments. Be a little clever, but not confusing. Try to build something that trips off the tongue.</p>
+                        <ul>
+                            <li>Studies show easy = true.</li>
+                            <li>Simple changes (alliteration, rhyme, repetition) improve credibility.</li>
+                            <li>Stocks perform better if company name is easier to pronounce.</li>
+                        </ul>
                     </aside>
                 </section>
 
                 <section>
-                    <p><img src="img/Moms-Friendly-Robot-Company.jpg" style="width: 50%;" alt="Mom’s Friendly Robot Company"></p>
+                    <p class="img"><img src="img/Moms-Friendly-Robot-Company.jpg" style="width: 50%;" alt="Mom’s Friendly Robot Company"></p>
 
                     <ul>
                         <li class="fragment">http://momsfriendlyrobots.com ?</li>
                         <li class="fragment">http://botslovebeer.com</li>
                     </ul>
-
-                    <aside class="notes">
-                        <p>Here’s <a href="http://shirtoid.com/56817/moms-friendly-robot-company/">a company that sells alcohol-fueled robots</a>. Their website could be located at momsfriendlyrobots.com, or they could choose something a little catchier like botslovebeer.com, which incorporates alliteration and creates a memorable and amusing mental image, which improves processing fluency.</p>
-                    </aside>
                 </section>
 
                 <section>
@@ -570,11 +599,18 @@
                     <h1>Hackable</h1>
 
                     <blockquote>
-                        <p>“A hackable URL is one that makes sense to a human reader, and where the human reader can guess what to change to get to another page.”—<a href="http://2002-2012.mattwilcox.net/archive/entry/id/990/">Matt Wilcox, 2008</a></p>
+                        <p>“A hackable URL is one that makes sense to a human reader, and where the human reader can guess what to change to get to another page.”</p>
+                        <footer><a href="http://2002-2012.mattwilcox.net/archive/entry/id/990/">Matt Wilcox, 2008</a></footer>
                     </blockquote>
 
                     <aside class="notes">
-                        The word "hack" has negative connotations, but originally it meant "messing around with something to get it to do what you want". Hacking a URL isn't figuring out how to steal the site's password database, it's figuring out how to get from one page to another without clicking through the site's traditional navigation. It's a power-user shortcut.
+                        <ul>
+                            <li>"Hack": negative connotations, originally meant "messing around with something to get it to do what you want".</li>
+                            <li>Hacking a URL is not about stealing passwords.</li>
+                            <li>Skipping traditional navigation and interaction models.</li>
+                            <li>Power-user shortcut.</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -588,13 +624,6 @@
                     <p class="fragment">
                         Hackable: <a href="https://github.com/mbourque/BostonConference">https://github.com/mbourque/BostonConference</a>
                     </p>
-
-                    <aside class="notes">
-                        <p>I mentioned earlier that a well-designed path improves hackability. Hackability is the ability of users to understand intuitively what parts of your URL to change to get to the information they want.</p>
-                        <p>This URL is not hackable. Chop off that last path segment (the intuitive and understandable “ref=sr_1_2”) and... nothing changes. Chop off the next one and you get a 404. If you want other Tovolo products, there’s no way to get to them just by exploring the URL structure.</p>
-
-                        <p>This URL is hackable. If you get rid of the repository name, “BostonConference”, it takes you to Michael’s github profile, as you’d probably expect. Drop his username, and you’re at the Github home page.</p>
-                    </aside>
                 </section>
 
                 <section>
@@ -621,22 +650,25 @@
                     </div>
 
                     <aside class="notes">
-                        <p>Do users care about hackable URLs? There hasn’t been a definitive study to really determine this, but anecdotal evidence holds that URL hackability is important to power users.</p>
-                        <p>In his seminal work “The Humane Interface,” Jef Raskin says, and I’m paraphrasing, that good interfaces allow you to form habits, because they’re predictable. Understanding the URL structure and being able to hack navigating a site is a habit that power users can develop if your URL structure supports it, and habits lead to loyal users.</p>
-
-                        <p>What does a URL-related habit look like? Well, consider usernames. If you know that a site uses URLs like this consistently, and you know someone’s username on Twitter is “@rfreebern”, you might develop the habit of trying a URL like this to see if they’ve done any open-source development, rather than bothering with the intermediate step of running a search. However, if the site used a URL like this with a user ID in the middle, you can’t develop that habit. There’s no way to take a username and guess the URL, so you wouldn’t even try.</p>
+                        <ul>
+                            <li>Do users care? No definitive study, but anecdotal evidence supports it.</li>
+                            <li>“The Humane Interface,” Jef Raskin: paraphrased, good interfaces form habits.</li>
+                            <li>Predictable and consistent allows habits. Habits lead to loyal users.</li>
+                        </ul>
                     </aside>
                 </section>
 
                 <section>
                     <h1>Slugs</h1>
 
-                    <p><a href="http://www.flickr.com/photos/8393288@N04/5228686358"><img src="img/5228686358_fe6b45fd2b_b.jpg" alt="Slug" style="width: 60%;"></a></p>
+                    <p class="img"><a href="http://www.flickr.com/photos/8393288@N04/5228686358"><img src="img/5228686358_fe6b45fd2b_b.jpg" alt="Slug" style="width: 60%;"></a></p>
 
                     <aside class="notes">
-                        <p>While we’re talking about hackable URLs, what about slugs? If you’re not aware of the terminology, slugs are short, keyword-rich summaries of the document.</p>
-
-                        <p>Slugs don’t add to hackability, but the benefits they provide to readability, credibility, and searchability are worth the additional length. However, in order to maintain hackability, it’s good practice to make the slug portion of your URLs optional.</p>
+                        <ul>
+                            <li>Slugs are short, keyword-rich summaries.</li>
+                            <li>Don't add to hackability, but benefit readability, credibility, and searchability.</li>
+                            <li>Implementation should allow hackability.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -663,10 +695,14 @@
                         <li>Stick to alphanumerics and hyphen</li>
                         <li>Get rid of common words (conjunctions, articles, etc.)</li>
                         <li>Include something unique (an ID or a date)</li>
+                        <li>(or store the slug with the document)</li>
                     </ol>
 
                     <aside class="notes">
-                        <p>When adding slugging to a system, don’t reinvent the wheel. Good slugging practices have been essentially standardized, and there are literally dozens of slug generators on packagist.</p>
+                        <ul>
+                            <li>Don't reinvent the wheel.</li>
+                            <li>Literally dozens of slug libraries on packagist.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -676,7 +712,11 @@
                     <p>http://example.com/blog/2013/08/16/the-ux-of-urls</p>
 
                     <aside class="notes">
-                        <p>It depends on your implementation. If you make two posts that day, how does the URL change? If you drop the slug, does it still work? What if you get rid of the slug and the day — do you get an index of all of August’s posts? Making hackable URLs is more than just making the parts of the URL make sense, it’s also making sure your code responds appropriately to changes in all those parts.</p>
+                        <ul>
+                            <li>Depends on the the implementation.</li>
+                            <li>What happens if you drop various parts? What if you make two posts in one day?</li>
+                            <li>Hackable URLs require making your code respond appropriately.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -687,7 +727,11 @@
                     <p><a href="http://www.flickr.com/photos/efleming/237379252"><img src="img/237379252_cd4cadda61_b.jpg" alt="Sharing is Caring" style="width: 50%;"></a></p>
                     
                     <aside class="notes">
-                        <p>Let's talk about sharing. As the web has become a social space, sharing what we find has become a constant part of life. The shareability of your URLs is more important than ever to consider when designing them. We’ve already talked about making them short, sensible, and snappy. What makes them shareable?</p>
+                        <ul>
+                            <li>Let's talk about sharing.</li>
+                            <li>Sharing is everywhere</li>
+                            <li>Already talked about short, sensible, and snappy.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -702,11 +746,14 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>You want your URLs to be robust. Robustness means they’re hard to screw up when shared.</p>
-                        <p>Like I mentioned before, dropping the slug shouldn’t result in a 404.</p>
-                        <p>Dropping even a <em>portion</em> of the slug shouldn’t result in a 404, as long as there’s enough there to identify what’s being requested.</p>
-                        <p>Why? Copy-and-paste errors that truncate your URL shouldn’t penalize the user. Platforms that erroneously insert linebreaks shouldn’t penalize the user. <em>Changing</em> the slug to something else entirely, however, should.</p>
-                        <p>Additionally, avoid generating URLs that contain encoded characters, because the way they’re shared could result in the dreaded %2520, aka double-encoding, or in the other direction, improper decoding.</p>
+                        <ul>
+                            <li>Robustness: hard to screw up when shared.</li>
+                            <li>Dropping the slug shouldn’t result in a 404.</li>
+                            <li>Dropping a <em>portion</em> of the slug shouldn’t result in a 404, as long as there’s enough there to identify what’s being requested.</li>
+                            <li>Why? Copy-and-paste errors that truncate your URL shouldn’t penalize the user. Platforms that erroneously insert linebreaks shouldn’t penalize the user.
+                            <li><em>Changing</em> the slug to something else entirely, however, should.</li>
+                            <li>Additionally, avoid generating URLs that contain encoded characters, because the way they’re shared could result in aka double-encoding.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -716,8 +763,10 @@
                     <p class="fragment"><img src="img/long-url.png" alt="A long URL"></p>
 
                     <aside class="notes">
-                        <p>Sharing isn’t only done electronically, though. “Hey, you should check out this page, lemme write it down—”</p>
-                        <p>URLs are shared by hand. They’re shared by speaking. They’re printed in the newspaper and magazines. They show up on receipts and product labels. They’re stitched into clothing tags.</p>
+                        <ul>
+                            <li>“Hey, you should check out this page, lemme write it down—”</li>
+                            <li>By hand, speaking, printed in newspaper and magazines, on receipts and product labels, stitched into clothing tags.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -725,7 +774,10 @@
                     <p><a href="http://www.flickr.com/photos/minor9th/209503293"><img src="img/209503293_981243289c_o.jpg" alt="URL in the sky" style="width: 80%;"></a></p>
 
                     <aside class="notes">
-                        <p>They're written in the sky. How do you make your URLs as shareable as possible even in these diverse media? Make them as short and unambiguous as possible.</p>
+                        <ul>
+                            <li>They're written in the sky.</li>
+                            <li>Make them short = easy to type, and unambiguous = easy to understand what to type, as possible.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -743,8 +795,10 @@
                     <p class="fragment">http://Orange.io</p>
 
                     <aside class="notes">
-                        <p>Remember DJ Ill Jill? Low ASCII abounds with glyphs that can be easy to confuse when they’re not written or printed clearly.</p>
-                        <p>If your site’s name is “Zero Range” and you snag 0range.io, you’d better get Orange.io too.</p>
+                        <ul>
+                            <li>Remember DJ Ill Jill? Low ASCII abounds with similar glyphs.</li>
+                            <li>“Zero Range”</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -754,7 +808,7 @@
                     <p class="fragment"><img src="img/qr.png" alt="http://blog.rnf.me/ux-of-urls"></p>
                     
                     <aside class="notes">
-                        <p>How about sharing a printed URL with people on mobile devices? Well, you could use a QR code...</p>
+                        <p>Sharing a printed URL with people on mobile devices?</p>
                     </aside>
                 </section>
 
@@ -773,7 +827,14 @@
                     <h2 class="fragment">bit.ly!</h2>
 
                     <aside class="notes">
-                        <p>You’ve spent all this time crafting a beautiful URL like this and now you want to make it as short as possible to improve shareability? “I know,” you say. “I’ll use bit.ly!” Sure, that makes sense, right? It’ll give you a short, snappy URL to share that ends up delivering people to your nicely-crafted full URL, and provides you with some clickthrough metrics at the same time. It’s a win-win, right?</p>
+                        <ul>
+                            <li>You have a beautiful URL. Now you want to shorten it.</li>
+                            <li>Use bit.ly?</li>
+                            <li>Short, snappy URL, quick to type.</li>
+                            <li>Results in nicely-crafted full URL.</li>
+                            <li>Provides all sorts of metrics.</li>
+                            <li>Win-win, right?</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -782,17 +843,27 @@
                     <p><a href="http://www.flickr.com/photos/30166666@N03/3827043121"><img src="img/3827043121_4925a4c7db_b.jpg" alt="No!" style="width: 50%;"></a></p>
 
                     <aside class="notes">
-                        <p>No. Third-party URL shorteners are bad for the web and bad for usability. To quote Jason Scott, a digital archivist who works for the Internet Archive:</p>
+                        <ul>
+                            <li>Third-party URL shorteners are bad for the web and bad for usability.</li>
+                            <li>To quote Jason Scott:</li>
                     </aside>
                 </section>
 
                 <section>
                     <blockquote>
-                        <p>“URL shorteners may be one of the worst ideas, one of the most backward ideas, to come out of the last five years. ... [T]hese general-purpose URL shorteners, with their shady or fragile setups and utter dependence upon them, well. If we lose TinyURL or bit.ly, millions of weblogs, essays, and non-archived tweets lose their meaning. Instantly. To someone in the future, it’ll be like everyone from a certain era of history […] started speaking in a one-time pad of cryptographic pass phrases.”—<a href="http://ascii.textfiles.com/archives/3029">Jason Scott, 2011</a></p>
+                        <p>“URL shorteners may be one of the worst ideas, one of the most backward ideas, to come out of the last five years. ... [T]hese general-purpose URL shorteners, with their shady or fragile setups and utter dependence upon them, well. If we lose TinyURL or bit.ly, millions of weblogs, essays, and non-archived tweets lose their meaning. Instantly. To someone in the future, it’ll be like everyone from a certain era of history […] started speaking in a one-time pad of cryptographic pass phrases.”</p>
+                        <footer><a href="http://ascii.textfiles.com/archives/3029">Jason Scott, 2011</a></footer>
                     </blockquote>
 
                     <aside class="notes">
-                        <p>URL shorteners add a layer of fragility to your URLs that is completely outside your control. You’re handing off your marketing strategy to a black-box system with zero accountability. There’s no contract between you and these services, no guarantees.</p>
+                        <ul>
+                            <li>Add a layer of fragility</li>
+                            <li>Outside of your control<li>
+                            <li>Zero accountability, no contracts, no guarantees.</li>
+                            <li>Handing off marketing strategy</li>
+                            <li>Eliminate credibility, robustness, searchability, everything you worked for.</li>
+                            <li>You can tell I'm a big fan.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -812,7 +883,14 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>URL shortening is undeniably useful. If it weren’t, it wouldn’t be so prevalent. To keep the benefits of URL shorteners without exposing yourself to the drawbacks, <em>host your own</em>. It’s relatively easy to do, especially with an open-source package like <a href="http://yourls.org/">YOURLS</a>, and lets you tie the convenience of short URLs directly into your platform. Set it up, use its API, and add a shorturl relation link to your documents. And if you want to get <em>really</em> fancy, write a plugin so that it generates its short URL codes using something like Douglas Crockford’s Base32 encoder, or (shameless plug) my base-27 “Easier” encoder, both of which are designed to sacrifice some shortness in order to improve robustness.</p>
+                        <ul>
+                            <li>Undeniably useful, or wouldn't be so prevalent.</li>
+                            <li>Keep benefits without exposing yourself to drawbacks.</li>
+                            <li>Build convenience into your platform.</li>
+                            <li>Allows hand-crafting short URLs when appropriate.</li>
+                            <li>Associates short domain with your brand == improves credibility.</li>
+                            <li>Base32/Easier sacrifice shortness to improve robustness.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -824,21 +902,23 @@
                         <li><code>301</code> any alternates</li>
                         <li>Rewrite trailing slashes</li>
                     </ul>
-
-                    <aside class="notes">
-                        <p>Finally, robust shareable URLs are <em>canonical</em>. Create a single URL that points directly to your content. If you create a shortened URL, it’s not the canonical URL, it’s the redirect. Don’t respond to different URLs with the same content. A document should have one, and only one, URL.</p>
-                    </aside>
                 </section>
 
                 <section>
                     <h1>URLs are forever</h1>
 
                     <blockquote>
-                        <p>“When someone follows a link and it breaks, they generally lose confidence in the owner of the server. They also are frustrated—emotionally and practically from accomplishing their goal.”—<a href="http://www.w3.org/Provider/Style/URI.html">Tim Berners-Lee, 1998</a></p>
+                        <p>“When someone follows a link and it breaks, they generally lose confidence in the owner of the server. They also are frustrated—emotionally and practically from accomplishing their goal.”</p>
+                        <footer><a href="http://www.w3.org/Provider/Style/URI.html">Tim Berners-Lee, 1998</a></footer>
                     </blockquote>
 
                     <aside class="notes">
-                        <p>Robustness also includes the notion of persistence. Tim wrote “Cool URIs don’t change” back in 1998, and what he meant was that, once you’ve put a document on the web at a certain address, you should do your best to make sure that address always works (and that's another reason why you should design your URLs from the start). In the real world, we have to move stuff around constantly. Maybe the company gets acquired. Maybe there’s a platform upgrade. Maybe it gets rebuilt by another company.</p>
+                        <ul>
+                            <li>Robustness includes persistence.</li>
+                            <li>Do everything you can to keep old URLs working.</li>
+                            <li>Another reason to plan a solid URL design from the start.</li>
+                            <li>Real world: stuff moves. Company bought, platform change, rebuilt by third-party.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -854,7 +934,12 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>The key is to use those HTTP 3xx redirects, as many as necessary, to make sure that any URL that ever pointed to document X still gets the user to document X. The thing is, if there's POST data involved, 301, 302, and 303 don't really do what you want -- you POST the data to one URL, the server says "hey, go here instead," and the browser isn't supposed to re-POST the data to the new one. 307 and 308 are meant to provide a method to handle that,a nd when you POST data and receive a 307 or 308, the browser should automatically re-POST the data to the new URL.</p>
+                        <ul>
+                            <li>Learn and love those HTTP 3xx redirects.</li>
+                            <li>Use as many as necessary.</li>
+                            <li>Careful with POST URLs: 301, 302, 303 switch to GET.</li>
+                            <li>307 and 308 force re-POST.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -867,7 +952,10 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>An important part of designing persistent URLs is hiding implementation details. Just because your application is running under PHP right now doesn’t mean it—or even part of it—won’t get moved to another platform someday. If your URLs end in “.php” and you change the backend code, you either need to change all your URLs and set up redirects, or keep responding at the old URLs despite their inaccuracy. Similarly, if you host a wiki running on MediaWiki or a blog running on WordPress, keep those platform names (and even any indicators of them, such as “mw” or “wp”) out of your public-facing URLs, in case you decide to change platforms someday.</p>
+                        <ul>
+                            <li>Don't expose the implementation.</li>
+                            <li>MediaWiki/WordPress: don't put "mediawiki" or "wp" in URLs.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -875,11 +963,15 @@
                     <h1>Pay Up</h1>
 
                     <blockquote>
-                        <p>“Pretty much the only good reason for a document to disappear from the Web is that the company which owned the domain name went out of business or can no longer afford to keep the server running.”—<a href="http://www.w3.org/Provider/Style/URI.html">Tim Berners-Lee, 1998</a></p>
+                        <p>“Pretty much the only good reason for a document to disappear from the Web is that the company which owned the domain name went out of business or can no longer afford to keep the server running.”</p>
+                        <footer><a href="http://www.w3.org/Provider/Style/URI.html">Tim Berners-Lee, 1998</a></footer>
                     </blockquote>
 
                     <aside class="notes">
-                        <p>DNS is the weak link in maintaining persistent URLs. If your domain registration lapses, there’s practically nothing you can do to salvage those lost URLs. Hopefully your content is indexed well so that people can find it again. Registrars allow you to pay multiple years ahead: do it.</p>
+                        <ul>
+                            <li>DNS is a weak link.</li>
+                            <li>Don't let registration lapse. Pay for a decade.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -899,9 +991,15 @@
                     </ul>
 
                     <aside class="notes">
-                        <p>At this point, if I’ve done my job, you have an inkling about what goes into creating a good, memorable, readable, speakable, credible, hackable, shareable, robust URL. Now do it for every single possible page on your website, including the user-generated ones and the ones that will be added in the future. We’re back to that concept of known knowns, known unknowns, and unknown unknowns.</p>
-
-                        <p>To deal with this, your project needs a URL design from the very beginning. Along with your scope and your spec and your visual and interaction designs, you should have a document about URL design. To write this document, you need a thorough understanding of the structure of the information you’re dealing with how you want people to use the site. You need to think about how new functionality will be added and how that will affect URLs. If you’re rewriting an old system and the URLs are changing, you need to think about how you’re going to set up redirects.</p>
+                        <ul>
+                            <li>If I've done my job, you have an inkling about how to create good URLs.</li>
+                            <li>Now do it for every URL on your site... including user-generated and ones added later.</li>
+                            <li>Known knowns, known unknowns, unknown unknowns.</li>
+                            <li>Need a URL design from the beginning.</li>
+                            <li>Write it down. Treat it like any other design doc.</li>
+                            <li>Thorough understanding of information structure and site usage.</li>
+                            <li>Plan for redirects too.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -916,7 +1014,11 @@
                     <p class="fragment"><a href="http://pecl.php.net/package/uri_template">uri_template PHP extension</a></p>
 
                     <aside class="notes">
-                        <p>If you want to be very formal about your URL design, you could consider writing up some URI Templates. URI Templates are an upcoming IETF specification that provides a standardized way to formally document a URL structure. RFC 6570 is a work in progress, but there are already libraries for various languages (including a PHP extension) to help you work with them.</p>
+                        <ul>
+                            <li>A formal approach.</li>
+                            <li>In-progress specification.</li>
+                            <li>Many libraries exist.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -928,7 +1030,11 @@
                     </blockquote>
 
                     <aside class="notes">
-                        <p>To write up an effective URL design for a project, you don't need to be formal, just thorough. Try to cover all the bases: the URLs you know, the URLs you expect, and the URLs that might come later. Merely having an initial design document as a guide will help keep things on the right track, and encourage people to put a little extra thought into creating good URLs.</p>
+                        <ul>
+                            <li>No need to be formal as long as you're thorough.</li>
+                            <li>Cover all the bases.</li>
+                            <li>Merely having a document as a guide will help keep people thinking.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -936,11 +1042,20 @@
                     <h1>Why Should I Care About URLs?</h1>
 
                     <blockquote>
-                        <p>“We are building clans around languages we speak to the Machine.”—<a href="https://twitter.com/mraleph/status/225587192427327488">Vyacheslav Egorov, 2013</a></p>
+                        <p>“We are building clans around languages we speak to the Machine.”</p>
+                        <footer><a href="https://twitter.com/mraleph/status/225587192427327488">Vyacheslav Egorov, 2013</a></footer>
                     </blockquote>
 
                     <aside class="notes">
-                        <p>Recall this quote. When it comes down to it, the clans we’re building around programming languages are unimportant in the long run. In web development, programming languages, frameworks, best practices, platforms, operating systems, servers come and go constantly. The only constant is the web itself. The smartest thing you can do in software today and in the future is bet on the web, and part of that is embracing those things, like URLs, that make the web what it is. They’re a key part of the web, and they’ll outlast your programming language because they’re bigger than any single programming language. They’re part of the native language of the web, and if you’re going to speak to the web, you have to understand and respect that.</p>
+                        <ul>
+                            <li>Clans around programming languages don't matter.</li>
+                            <li>Languages, frameworks, best practices, platforms, operating systems come and go.</li>
+                            <li>Only constant is the web itself.</li>
+                            <li>Smartest thing: bet on the web.</li>
+                            <li>Embrace things like URLS that make the web what it is.</li>
+                            <li>Key part of the web, will outlast your clans.</li>
+                            <li>URLs are part of the native language of the web. If you're going to speak to the web, you have to understand and respect that.</li>
+                        </ul>
                     </aside>
                 </section>
 
