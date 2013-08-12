@@ -67,7 +67,8 @@
 
                     <aside class="notes">
                         <ul>
-                            <li>The web is the single biggest collaborative knowledge-sharing effort ever undertaken by the human race.</li>
+                            <li>To understand URL, first understand web.</li>
+                            <li>Web: single biggest collaborative knowledge-sharing effort ever undertaken by the human race.</li>
                             <li>Globe-spanning ad-hoc machine.</li>
                             <li>We need to interact with it to make it useful.</li>
                         </ul>
@@ -84,8 +85,8 @@
 
                     <aside class="notes">
                         <ul>
-                            <li>URLs are nouns in HTTP.</li>
-                            <li>Platonic ideal URL: short, semantic, well-defined, unchanging, refers to a specific piece of information.</li>
+                            <li>URLs are nouns. How we speak to web and about web.</li>
+                            <li>Platonic ideal: short, semantic, well-defined, unchanging, a specific piece of info and how to find it.</li>
                             <li>Programming languages are for physical machines.</li>
                             <li>Physical machines talk to each other and humans through HTTP.</li>
                             <li>Without URLs, communication breaks down.</p>
@@ -128,9 +129,7 @@
                         <p>“[P]eople spent 25% of their time looking at the URL in navigational tasks vs. 22% in informational tasks.”</p>
                         <footer><a href="ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf">Edward Cutrell &amp; Zhiwei Guan, 2007</a></footer>
                     </blockquote>
-
-                    <p class="fragment img"><img src="img/boromir.jpg" alt="One does not simply click on mordor.com"></p>
-
+                    
                     <aside class="notes">
                         <ul>
                             <li>Microsoft Research, eyetracking study, search engine behavior.</li>
@@ -138,6 +137,27 @@
                             <li>"People just search and click on what looks best!"</li>
                         </ul>
                     </aside>
+                </section>
+
+                <section>
+                    <h1>People Care</h1>
+
+                    <blockquote>
+                        <p>“[S]earchers are particularly interested in the URL when they are assessing the credibility of a destination. If the URL looks like garbage, people are less likely to click on that search hit. On the other hand, if the URL looks like the page will address the user's question, they are more likely to click.”</p>
+                        <footer><a href="http://www.nngroup.com/articles/url-as-ui/">Jakob Nielsen, 2007</a></footer>
+                    </blockquote>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>Study by Nielsen/Norman Group</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>People Care</h1>
+
+                    <p class="img"><img src="img/boromir.jpg" alt="One does not simply click on mordor.com"></p>
                 </section>
 
                 <section>
@@ -210,8 +230,6 @@
                             <li>ARPA was the Advanced Research Projects Agency, now DARPA, now Address Routing Protocol Area.</li>
                             <li>If you own and operate a TLD, name isn't required.</li>
                             <li>IDNs: This is Tamil for "example.test"</li>
-                            <li>IDNs: domains were English-centric, only used low ASCII.</li>
-                            <li>IDNs are kind of a mess when it comes to implementation and support. Ask me about that later.</li>
                         </ul>
                     </aside>
                 </section>
@@ -220,6 +238,10 @@
                     <h1>What Makes a URL?</h1>
 
                     <p><span class="fragment">http://</span><span class="fragment">example.com</span><span class="fragment">/path</span><span class="fragment">/of</span><span class="fragment">/any</span><span class="fragment">/length</span><span class="fragment">/resource</span><span class="fragment">?query=data</span><span class="fragment">&another=parameter</span><span class="fragment">#fragment</span></p>
+
+                    <aside class="notes">
+                        <p>Technically accurate: I'm referring specifically to HTTP URLs.</p>
+                    </aside>
                 </section>
 
                 <section>
@@ -345,8 +367,8 @@
                     <aside class="notes">
                         <ul>
                             <li>Anders Ramsay, UX designer in Brooklyn.</li>
-                            <li>Litmus test for logo design: faxing it.</li>
-                            <li>Litmus test for domain? Tell someone over the phone.</li>
+                            <li>Litmus test for logo design presentation: faxing it.</li>
+                            <li>Litmus test for domain? Tell someone over the phone, outside on windy day.</li>
                             <li>Maybe with marbles in your cheeks.</li>
                         </ul>
 
@@ -467,10 +489,10 @@
 
                     <aside class="notes">
                         <ul>
-                            <li>Up to question mark: UTF-8. After: document's encoding.</li>
+                            <li>Up to question mark: UTF-8. After: doc's encoding.</li>
                             <li>Except if document is UTF-16; then UTF-8.</li>
-                            <li>Recently saw a quote: "When in doubt, use UTF-8. When not in doubt, you're probably wrong and should still use UTF-8."</li>
-                            <li>Special characters? Percent-encoding, but the special characters for the path are different from the query.</li>
+                            <li>"When in doubt, use UTF-8. When not in doubt, you're probably wrong and should still use UTF-8."</li>
+                            <li>Special characters? Percent-encoding, but special characters for the parts are different.</li>
                     </aside>
                 </section>
 
@@ -585,6 +607,7 @@
                     </aside>
                 </section>
 
+                <!--
                 <section>
                     <p class="img"><img src="img/Moms-Friendly-Robot-Company.jpg" style="width: 50%;" alt="Mom’s Friendly Robot Company"></p>
 
@@ -593,6 +616,7 @@
                         <li class="fragment">http://botslovebeer.com</li>
                     </ul>
                 </section>
+                -->
 
                 <section>
                     <h2>Good URLs are</h2>
@@ -651,7 +675,7 @@
 
                     <aside class="notes">
                         <ul>
-                            <li>Do users care? No definitive study, but anecdotal evidence supports it.</li>
+                            <li>Do users care? Couldn't find study; anecdotal evidence supports it.</li>
                             <li>“The Humane Interface,” Jef Raskin: paraphrased, good interfaces form habits.</li>
                             <li>Predictable and consistent allows habits. Habits lead to loyal users.</li>
                         </ul>
@@ -666,6 +690,7 @@
                     <aside class="notes">
                         <ul>
                             <li>Slugs are short, keyword-rich summaries.</li>
+                            <li>From print media: short name given to an article for internal use.</li>
                             <li>Don't add to hackability, but benefit readability, credibility, and searchability.</li>
                             <li>Implementation should allow hackability.</li>
                         </ul>
@@ -706,6 +731,7 @@
                     </aside>
                 </section>
 
+                <!--
                 <section>
                     <h1>Is this URL hackable?</h1>
 
@@ -719,12 +745,13 @@
                         </ul>
                     </aside>
                 </section>
+                -->
 
                 <section>
                     <h2>Good URLs are</h2>
                     <h1>Shareable</h1>
 
-                    <p><a href="http://www.flickr.com/photos/efleming/237379252"><img src="img/237379252_cd4cadda61_b.jpg" alt="Sharing is Caring" style="width: 50%;"></a></p>
+                    <p class="img"><a href="http://www.flickr.com/photos/efleming/237379252"><img src="img/237379252_cd4cadda61_b.jpg" alt="Sharing is Caring" style="width: 50%;"></a></p>
                     
                     <aside class="notes">
                         <ul>
@@ -748,9 +775,8 @@
                     <aside class="notes">
                         <ul>
                             <li>Robustness: hard to screw up when shared.</li>
-                            <li>Dropping the slug shouldn’t result in a 404.</li>
-                            <li>Dropping a <em>portion</em> of the slug shouldn’t result in a 404, as long as there’s enough there to identify what’s being requested.</li>
-                            <li>Why? Copy-and-paste errors that truncate your URL shouldn’t penalize the user. Platforms that erroneously insert linebreaks shouldn’t penalize the user.
+                            <li>No slug? 301. Truncated slug? 301.</li>
+                            <li>Why? Copy-and-paste errors shouldn’t penalize the user. Platforms that insert linebreaks shouldn’t penalize the user.</li>
                             <li><em>Changing</em> the slug to something else entirely, however, should.</li>
                             <li>Additionally, avoid generating URLs that contain encoded characters, because the way they’re shared could result in aka double-encoding.</li>
                         </ul>
@@ -760,7 +786,7 @@
                 <section>
                     <h1>Old-Fashioned<br/>Sharing</h1>
 
-                    <p class="fragment"><img src="img/long-url.png" alt="A long URL"></p>
+                    <p class="fragment img"><img src="img/long-url.png" alt="A long URL"></p>
 
                     <aside class="notes">
                         <ul>
@@ -771,7 +797,7 @@
                 </section>
 
                 <section>
-                    <p><a href="http://www.flickr.com/photos/minor9th/209503293"><img src="img/209503293_981243289c_o.jpg" alt="URL in the sky" style="width: 80%;"></a></p>
+                    <p class="img"><a href="http://www.flickr.com/photos/minor9th/209503293"><img src="img/209503293_981243289c_o.jpg" alt="URL in the sky" style="width: 80%;"></a></p>
 
                     <aside class="notes">
                         <ul>
@@ -813,7 +839,7 @@
                 </section>
 
                 <section>
-                    <p><a href="http://picturesofpeoplescanningqrcodes.tumblr.com"><img src="img/2013-08-06_1375805215-1073x579.png" alt="Pictures of People Scanning QR Codes"></a></p>
+                    <p class="img"><a href="http://picturesofpeoplescanningqrcodes.tumblr.com"><img src="img/2013-08-06_1375805215-1073x579.png" alt="Pictures of People Scanning QR Codes"></a></p>
                     <aside class="notes">
                         <p>...but maybe there’s a better way. It’s time to consider URL shorteners.</p>
                     </aside>
@@ -831,7 +857,7 @@
                             <li>You have a beautiful URL. Now you want to shorten it.</li>
                             <li>Use bit.ly?</li>
                             <li>Short, snappy URL, quick to type.</li>
-                            <li>Results in nicely-crafted full URL.</li>
+                            <li>Redirects to nicely-crafted full URL.</li>
                             <li>Provides all sorts of metrics.</li>
                             <li>Win-win, right?</li>
                         </ul>
@@ -845,7 +871,7 @@
                     <aside class="notes">
                         <ul>
                             <li>Third-party URL shorteners are bad for the web and bad for usability.</li>
-                            <li>To quote Jason Scott:</li>
+                            <li>Take a moment to read this quote from Jason Scott.</li>
                     </aside>
                 </section>
 
@@ -857,10 +883,9 @@
 
                     <aside class="notes">
                         <ul>
-                            <li>Add a layer of fragility</li>
-                            <li>Outside of your control<li>
+                            <li>Add a layer of fragility. Outside of your control</li>
                             <li>Zero accountability, no contracts, no guarantees.</li>
-                            <li>Handing off marketing strategy</li>
+                            <li>Handing off marketing strategy.</li>
                             <li>Eliminate credibility, robustness, searchability, everything you worked for.</li>
                             <li>You can tell I'm a big fan.</li>
                         </ul>
@@ -1050,8 +1075,7 @@
                         <ul>
                             <li>Clans around programming languages don't matter.</li>
                             <li>Languages, frameworks, best practices, platforms, operating systems come and go.</li>
-                            <li>Only constant is the web itself.</li>
-                            <li>Smartest thing: bet on the web.</li>
+                            <li>Only constant is the web itself. Bet on the web.</li>
                             <li>Embrace things like URLS that make the web what it is.</li>
                             <li>Key part of the web, will outlast your clans.</li>
                             <li>URLs are part of the native language of the web. If you're going to speak to the web, you have to understand and respect that.</li>
@@ -1061,11 +1085,15 @@
 
                 <section>
                     <h1>Thank you!</h1>
-                    <p>Ryan Freebern / <a href="http://twitter.com/rfreebern">@rfreebern</a></p>
+                    <div>Ryan Freebern / <a href="http://twitter.com/rfreebern">@rfreebern</a></div>
                 </section>
 
                 <section>
-                    <h1>References</h1>
+                    <h3>References</h3>
+                </section>
+
+                <section>
+                    <h3>Image Credits</h3>
                 </section>
 
             </div>
