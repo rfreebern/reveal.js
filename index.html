@@ -39,6 +39,7 @@
             blockquote footer:before { content: "—"; }
             .reveal p { text-align: left; }
             .reveal p.img { text-align: center; }
+            aside { font-size: 80%; }
         </style>
     </head>
 
@@ -49,11 +50,12 @@
                 <section>
                     <h1>The UX of URLs</h1>
                     <div><a href="http://rnf.me">Ryan Freebern</a> / <a href="http://twitter.com/rfreebern">@rfreebern</a></div>
+                    <div><a href="http://usmre.com">Union Street Media</a></div>
 
                     <aside class="notes">
                         <ul>
                             <li>UX begins before user has reached your site.</li>
-                            <li>Explain how we know this, what it means, what makes up a URL, what makes a URL good, and why it matters.</li>
+                            <li>Going to talk about how we know this, what it means, what makes a URL, what makes a URL good, and why it matters.</li>
                         </ul>
                 </section>
 
@@ -62,7 +64,7 @@
                     <h2>RFC 1738</h2>
                     <blockquote>
                         <p>“This document describes the syntax and semantics for a compact string representation for a resource available via the Internet. These strings are called ‘Uniform Resource Locators’ (URLs).”</p>
-                        <footer>Tim Berners-Lee et al, 1994</footer>
+                        <footer><a href="http://www.ietf.org/rfc/rfc1738.txt">Tim Berners-Lee et al, 1994</a></footer>
                     </blockquote>
 
                     <aside class="notes">
@@ -79,8 +81,8 @@
                     <h1>HTTP Spoken Here</h1>
 
                     <blockquote>
-                    <p>“We are building clans around languages we speak to the Machine.”</p>
-                    <footer><a href="https://twitter.com/mraleph/status/225587192427327488">Vyacheslav Egorov, 2013</a></footer>
+                        <p>“We are building clans around languages we speak to the Machine.”</p>
+                        <footer><a href="https://twitter.com/mraleph/status/225587192427327488">Vyacheslav Egorov, 2013</a></footer>
                     </blockquote>
 
                     <aside class="notes">
@@ -371,8 +373,6 @@
                             <li>Litmus test for domain? Tell someone over the phone, outside on windy day.</li>
                             <li>Maybe with marbles in your cheeks.</li>
                         </ul>
-
-                        <p><a href="http://www.andersramsay.com/2005/07/30/selecting-user-friendly-domain-names/">“Selecting user-friendly domain names”, Anders Ramsay, 2005</a></p>
                     </aside>
                 </section>
 
@@ -398,6 +398,10 @@
 
                     <h3 class="fragment">http://rim.jobs</h3>
                     <h3 class="fragment">http://oddsextractor.com</h3>
+
+                    <aside class="notes">
+                        <p>.jobs started registrations in 2005. RIM launched site in January 2011.</p>
+                    </aside>
                 </section>
 
                 <section>
@@ -482,8 +486,6 @@
                     <h2>A Brief Tangent</h2>
 
                     <p style="font-family: monospace;">http://example.com/path/resource?query=data#fragment</p>
-                    <p style="font-family: monospace;"><span class="fragment">------------ UTF-8 ------------- <span class="fragment">------- ??? -------</span></p>
-
                     <p class="fragment">http://example.com/?emotion=(╯°□°)╯︵ ┻━┻</p>
                     <p class="fragment">http://example.com/?emotion=%28%E2%95%AF%C2%B0%E2%96%A1%C2%B0%29%E2%95%AF%EF%B8%B5%20%E2%94%BB%E2%94%81%E2%94%BB</p>
 
@@ -565,8 +567,8 @@
                     <h1>Reputation</h1>
 
                     <ul class="fragment">
-                        <li><a href="http://en.wikipedia.org/wiki/Chinchilla">http://en.wikipedia.org/wiki/Chinchilla</a></li>
-                        <li><a href="http://joebanana.tripod.com/mysite/chinchilla_page.htm">http://joebanana.tripod.com/mysite/chinchilla_page.htm</a></li>
+                        <li>http://en.wikipedia.org/wiki/Chinchilla</li>
+                        <li>http://joebanana.tripod.com/mysite/chinchilla_page.htm</li>
                     </ul>
 
                     <aside class="notes">
@@ -582,8 +584,8 @@
                     <h1>Association</h1>
 
                     <ul class="fragment">
-                        <li><a href="http://www.cmu.edu/staff/daviska/papers/2013/alg349a.pdf">http://www.cmu.edu/staff/daviska/papers/2013/alg349a.pdf</a></li>
-                        <li><a href="http://www.securisite.com/articles/2013/08/new-algorithm">http://www.securisite.com/articles/2013/08/new-algorithm</a></li>
+                        <li>http://www.cmu.edu/staff/daviska/papers/2013/alg349a</li>
+                        <li>http://www.securisite.com/articles/2013/08/new-algorithm</li>
                     </ul>
 
                     <aside class="notes">
@@ -731,22 +733,6 @@
                     </aside>
                 </section>
 
-                <!--
-                <section>
-                    <h1>Is this URL hackable?</h1>
-
-                    <p>http://example.com/blog/2013/08/16/the-ux-of-urls</p>
-
-                    <aside class="notes">
-                        <ul>
-                            <li>Depends on the the implementation.</li>
-                            <li>What happens if you drop various parts? What if you make two posts in one day?</li>
-                            <li>Hackable URLs require making your code respond appropriately.</li>
-                        </ul>
-                    </aside>
-                </section>
-                -->
-
                 <section>
                     <h2>Good URLs are</h2>
                     <h1>Shareable</h1>
@@ -791,17 +777,7 @@
                     <aside class="notes">
                         <ul>
                             <li>“Hey, you should check out this page, lemme write it down—”</li>
-                            <li>By hand, speaking, printed in newspaper and magazines, on receipts and product labels, stitched into clothing tags.</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section>
-                    <p class="img"><a href="http://www.flickr.com/photos/minor9th/209503293"><img src="img/209503293_981243289c_o.jpg" alt="URL in the sky" style="width: 80%;"></a></p>
-
-                    <aside class="notes">
-                        <ul>
-                            <li>They're written in the sky.</li>
+                            <li>By hand, speaking, printed in newspaper and magazines, on receipts and product labels, stitched into clothing.</li>
                             <li>Make them short = easy to type, and unambiguous = easy to understand what to type, as possible.</li>
                         </ul>
                     </aside>
@@ -1091,14 +1067,82 @@
                 <section>
                     <h1>Thank you!</h1>
                     <div>Ryan Freebern / <a href="http://twitter.com/rfreebern">@rfreebern</a></div>
+                    <div><a href="http://usmre.com">Union Street Media</a></div>
                 </section>
 
                 <section>
                     <h3>References</h3>
+                    <div class="left" style="font-size: 60%; line-height: 1em; width: 48%;">
+                        <ol>
+                            <li><a href="http://www.ietf.org/rfc/rfc1738.txt">http://www.ietf.org/rfc/rfc1738.txt</a></li>
+                            <li><a href="https://twitter.com/mraleph/status/225587192427327488">https://twitter.com/mraleph/status/225587192427327488</a></li>
+                            <li><a href="ftp://ftp.research.microsoft.com/pub/tr/TR-2007-01.pdf">http://www.ietf.org/rfc/rfc1738.txt</a></li>
+                            <li><a href="http://www.ietf.org/rfc/rfc1738.txt">http://www.ietf.org/rfc/rfc1738.txt</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/URI_scheme">http://en.wikipedia.org/wiki/URI_scheme</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Top-level_domain">http://en.wikipedia.org/wiki/Top-level_domain</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Internationalized_domain_names">http://en.wikipedia.org/wiki/Internationalized_domain_names</a></li>
+                            <li><a href="http://www.ietf.org/rfc/rfc2732.txt">http://www.ietf.org/rfc/rfc2732.txt</a></li>
+                            <li><a href="http://www.w3.org/DesignIssues/MatrixURIs.html">http://www.w3.org/DesignIssues/MatrixURIs.html</a></li>
+                            <li><a href="http://www.andersramsay.com/2005/07/30/selecting-user-friendly-domain-names/">http://www.andersramsay.com/2005/07/30/selecting-user-friendly-domain-names/</a></li>
+                            <li><a href="http://www.adaptivepath.com/ideas/e000058">http://www.adaptivepath.com/ideas/e000058</a></li>
+                            <li><a href="http://blog.lunatech.com/2009/02/03/what-every-web-developer-must-know-about-url-encoding">http://blog.lunatech.com/2009/02/03/what-every-web-developer-must-know-about-url-encoding</a></li>
+                        </ol>
+                    </div>
+                    <div class="right" style="font-size: 60%; line-height: 1em; width: 48%;">
+                        <ol start="12">
+                            <li><a href="http://url.spec.whatwg.org">http://url.spec.whatwg.org</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Credibility">http://en.wikipedia.org/wiki/Credibility</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Processing_fluency">http://en.wikipedia.org/wiki/Processing_fluency</a></li>
+                            <li><a href="http://www.boston.com/bostonglobe/ideas/articles/2010/01/31/easy__true/">http://www.boston.com/bostonglobe/ideas/articles/2010/01/31/easy__true/</a></li>
+                            <li><a href="http://2002-2012.mattwilcox.net/archive/entry/id/990/">http://2002-2012.mattwilcox.net/archive/entry/id/990/</a></li>
+                            <li><a href="http://www.amazon.com/The-Humane-Interface-Directions-Interactive/dp/0201379376">http://www.amazon.com/The-Humane-Interface-Directions-Interactive/dp/0201379376</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Slug_%28publishing%29">http://en.wikipedia.org/wiki/Slug_%28publishing%29</a></li>
+                            <li><a href="http://picturesofpeoplescanningqrcodes.tumblr.com/">http://picturesofpeoplescanningqrcodes.tumblr.com/</a></li>
+                            <li><a href="http://ascii.textfiles.com/archives/3029">http://ascii.textfiles.com/archives/3029</a></li>
+                            <li><a href="http://joshua.schachter.org/2009/04/on-url-shorteners.html">http://joshua.schachter.org/2009/04/on-url-shorteners.html</a></li>
+                            <li><a href="http://www.w3.org/Provider/Style/URI.html">http://www.w3.org/Provider/Style/URI.html</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection">http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc6570">http://tools.ietf.org/html/rfc6570</a></li>
+                        </ol>
+                    </div>
                 </section>
 
                 <section>
                     <h3>Image Credits</h3>
+                    <ol style="font-size: 60%; line-height: 1em;">
+                        <li>“<a href="http://www.amazon.com/Why-Paint-Cats-2006-Calendar/dp/1580086993">Why Paint Cats 2006 Calendar</a>” by Ten Speed Press, used without permission.</li>
+                        <li>“<a href="http://www.independent.co.uk/migration_catalog/article5318614.ece/ALTERNATES/w460/Love-url.jpeg">Love URL</a>” from <a href="http://www.independent.co.uk/">The Independent</a>, used without permission.</li>
+                        <li>“<a href="http://www.quickmeme.com/search/?q=boromir">Boromir Meme</a>” based on still from “<a href="http://www.warnerbros.com/movies/home-entertainment/the-lord-of-the-rings-the-fellowship-of-the-ring/fd6dc54e-b04d-4804-9ee9-c7b22e5cb905.html">The Lord of the Rings: The Fellowship of the Ring</a>, from Warner Bros., via <a href="http://www.quickmeme.com">QuickMeme.com</a>, used without permission.</li>
+                        <li>“<a href="http://gandt.blogs.brynmawr.edu/files/2009/02/wall-e-eve-1640.jpg">Wall-E and Eve</a>” from “<a href="http://pixar.com">Wall-E</a>” from Pixar, used without permission.</li>
+                        <li>“<a href="http://www.flickr.com/photos/india-nepal-iran/215188804">Climbers at Khumbu Icefall</a>” by Mahatma4711 on Flickr, CC-By-2.0</li>
+                        <li>“<a href="http://fc04.deviantart.net/fs70/f/2011/308/f/e/freud_driving_a_tractor_by_voncrunch-d4f156c.jpg">Freud Driving a Tractor</a>” by <a href="http://voncrunchdesign.wordpress.com/2011/11/05/freud-driving-a-tractor/">Von Crunch Design</a>, used without permission.</li>
+                        <li>“<a href="http://www.flickr.com/photos/7342411@N02/4865201576">The Skeptical Chihuahua, Taipei</a>” by Yi Chen on Flickr, CC-By-2.0</li>
+                        <li>“<a href="http://shirtoid.com/56817/moms-friendly-robot-company/">Mom's Friendly Robot Company</a>” by Shirtoid.com, used without permission.</li>
+                        <li>“<a href="http://www.flickr.com/photos/8393288@N04/5228686358">Slug-50051</a>” by Glenn on Flickr, CC-By-SA-2.0</li>
+                        <li>“<a href="http://www.flickr.com/photos/efleming/237379252">Sharing birthday cake.</a>” by Eric Fleming on Flickr, CC-By-2.0</li>
+                        <li>“<a href="http://2.bp.blogspot.com/-_huVcbOYqBk/URn3pHPdrMI/AAAAAAAAFB0/g2gn-25TSa0/s1600/long-url.png">Long URL</a>” from <a href="http://benjaminraymondkelley.com">benjaminraymondkelley.com</a>, used without permission.</li>
+                        <li>“<a href="http://qrcode.kaywa.com/img.php?s=8&d=http://blog.rnf.me/ux-of-urls">http://blog.rnf.me/ux-of-urls QR Code</a>” from <a href="http://qrcode.kaywa.com/">Kaywa QR Code</a></li>
+                        <li>“<a href="http://www.flickr.com/photos/supernintendo_chalmers/3827043121">No!</a>” by mslavick on Flickr, CC-By-2.0</li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <h3>Software Mentions</h3>
+                    <ol>
+                        <li><a href="http://www.crockford.com/wrmg/base32.html">http://www.crockford.com/wrmg/base32.html</a></li>
+                        <li><a href="https://github.com/rfreebern/easier">https://github.com/rfreebern/easier</a></li>
+                        <li><a href="http://yourls.org">http://yourls.org</a></li>
+                        <li><a href="http://pecl.php.net/package/uri_template">http://pecl.php.net/package/uri_template</a></li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>Thanks</h3>
+                    <ul>
+                        <li><a href="http://annevankesteren.nl">Anne van Kesteren</a></li>
+                        <li><a href="http://vi.to">Vitorio Miliano</a></li>
+                        <li><a href="http://baicoianu.com/">James Baicoianu</a></li>
+                    </ul>
                 </section>
 
             </div>
